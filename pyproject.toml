@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phonix"
+dynamic = ["version"]
+description = "Listening-based bass, midrange and treble calibration with diffuse-field PEQ export"
+readme = "README.md"
+license = "MIT AND BSD-2-Clause AND CC-BY-3.0"
+license-files = ["LICENSE", "phonix/data/LICENSE-*.txt"]
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24"]
+keywords = ["audio", "headphones", "equalizer", "diffuse-field", "easyeffects"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console :: Curses",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "phonix.__version__"}
+
+[project.scripts]
+phonix = "phonix.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["phonix*"]
+
+[tool.setuptools.package-data]
+phonix = ["data/*.csv", "data/*.json", "data/*.txt", "data/*.wav"]

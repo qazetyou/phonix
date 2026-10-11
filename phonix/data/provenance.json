@@ -1,0 +1,24 @@
+{
+  "id": "df5128-middle-ear-v1",
+  "target": {
+    "source": "https://github.com/jaakkopasanen/AutoEq",
+    "commit": "7ae0f56d53074872b028649617a22bbb4232feb7",
+    "path": "targets/Diffuse field 5128.csv",
+    "sha256": "f906951f4ef7229fee579ca0bb574eec4aeea93f69e1e224ca4f94461836d361",
+    "license": "MIT"
+  },
+  "hearing_proxy": {
+    "source": "https://github.com/MalcolmSlaney/LoudnessModel",
+    "commit": "8370c866f66157b91a74e49d19441759556c7f77",
+    "path": "transfer_functions.py:ed_32000",
+    "source_sha256": "344a18cef1992f9b791150f9a3781990cfbda9a2801636d26fe40a6e7b8a6d0e",
+    "sha256": "51bd0f42f5faa40c8ba5708e99b89b6e6f49bc66d1597563f9ba3a94db24ea53",
+    "license": "BSD-2-Clause",
+    "derivation": "Magnitude response of the published 32 kHz middle-ear FIR, normalized at 1 kHz; this is a linear sensitivity proxy, not the full loudness model.",
+    "extension": {
+      "table_max_hz": 15000,
+      "supported_max_hz": 16000,
+      "method": "Hold the 15 kHz endpoint constant from 15 to 16 kHz; no validated sensitivity data is added. Values through 15 kHz are unchanged."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+Vibe Ace
+Music by Kevin MacLeod (incompetech.com).
+
+This recording is available under Creative Commons Attribution 3.0 Unported:
+https://creativecommons.org/licenses/by/3.0/
+
+Track:
+https://freemusicarchive.org/music/Kevin_MacLeod/Jazz_Sampler/Vibe_Ace_1278
+
+Source recording and its attribution notice:
+https://raw.githubusercontent.com/librosa/data/main/audio/Kevin_MacLeod_-_Vibe_Ace.hq.ogg
+https://raw.githubusercontent.com/librosa/data/main/audio/Kevin_MacLeod_-_Vibe_Ace.txt
+
+Changes made for phonix: a 25-second excerpt beginning at 30 seconds,
+resampling to 48 kHz stereo PCM16, short fades, and offline loudness
+normalization with true-peak limiting. Measurements and checksums are
+recorded in music_preview.json. No endorsement by the creator is implied.
+
+The music license applies to music_preview.wav independently of the program
+and its calibration model data.

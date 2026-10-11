@@ -1,0 +1,12 @@
+include README.md LICENSE THIRD_PARTY_NOTICES.md CHANGELOG.md AGENTS.md
+recursive-include phonix *.py *.csv *.json *.txt *.wav
+recursive-include docs *.md
+recursive-include tests *.py
+recursive-include tools *.py
+prune .venv
+prune .git
+prune build
+prune dist
+prune profiles
+prune exports
+global-exclude __pycache__ *.py[cod] .DS_Store

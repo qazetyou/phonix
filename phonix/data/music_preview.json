@@ -1,0 +1,32 @@
+{
+  "id": "vibe-ace-preview-v1",
+  "title": "Vibe Ace",
+  "artist": "Kevin MacLeod",
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "track_url": "https://freemusicarchive.org/music/Kevin_MacLeod/Jazz_Sampler/Vibe_Ace_1278",
+  "source_url": "https://raw.githubusercontent.com/librosa/data/main/audio/Kevin_MacLeod_-_Vibe_Ace.hq.ogg",
+  "source_sha256": "73d6443ef90a7c022f164e5aa90e56c2291585930b39b1656d0765abbc1f1779",
+  "sha256": "eee47c689a9c272b2f0ed8ec5de6abe9d9ffa51f691289e6d21db3047bb3de48",
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "sample_width_bytes": 2,
+  "source_start_seconds": 30.0,
+  "duration_seconds": 25.0,
+  "fade_seconds": 0.2,
+  "target_lufs": -14.0,
+  "normalization_filter": "loudnorm=I=-14:TP=-1:LRA=11",
+  "measured_lufs": -14.1,
+  "measured_true_peak_dbfs": -1.0,
+  "changes": "Excerpted, faded, loudness-normalized once with true-peak limiting, and resampled to 48 kHz stereo PCM16. Playback uses the fixed prepared file.",
+  "measurement": "Offline FFmpeg ebur128=peak=true; FFmpeg is not a playback dependency.",
+  "tone_reference": {
+    "method": "music-band-rms-v1",
+    "band_low_hz": 935.0,
+    "band_high_hz": 1065.0,
+    "band_rms_dbfs": -41.48575114824608,
+    "tone_peak_dbfs": -38.47545119160627,
+    "averaging": "Full-excerpt mean-square energy, then mean of channel powers; no gating",
+    "tone_level": "Equivalent steady-state 1 kHz sine RMS; short playback fades reduce time-mean power slightly"
+  }
+}
