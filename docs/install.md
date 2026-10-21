@@ -52,8 +52,9 @@ python3 -m venv .venv
 ```
 
 Source installation may download the setuptools build dependency as well as
-NumPy. The source archive includes the full README, model documentation, tests,
-asset notices and release-building tool. For development, use `pip install -e .`
+NumPy. The source archive includes the README, the full user and developer guide
+in `docs/usage.md`, model documentation, tests, asset notices and release-building
+tool. For development, use `pip install -e .`
 instead of `pip install .`.
 
 ## First session
